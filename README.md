@@ -13,7 +13,7 @@ Once you have the project locally on your machine, you're ready to start work.
  - `cd` into the `server` directory
  - Then, use `npm` to install the `sqlite3`, `sequlize` and `jest` packages.
 
-**Warning:** Make sure you `cd` into `server` first! This project has multiple folders and you do not want to install dependencies into the wrong one.
+:warning: **Warning:** Make sure you `cd` into `server` first! This project has multiple folders and you do not want to install dependencies into the wrong one.
 
 ### Configure your connection
 
@@ -112,11 +112,11 @@ You should set up the associations in `models/index.js`.
 
 ### User/Deck
 
-Each User may create and name exactly one Deck.
+Each User may create and exactly one Deck.
 
 E.g. A User `gandalf` might create a Deck called `The Fellowship`.
 
- - Associate users and decks with a one-to-one relationship.
+ - Associate Users and Decks with a one-to-one relationship.
  - Add tests to check the association.
 
 ### Deck/Card
@@ -125,8 +125,14 @@ Each Deck may contain many Cards. A Card may only belong to one Deck.
 
 E.g. `The Fellowship` might contain Cards called `Lizard Wizard` and `Bulk Brogan`. (Two Decks might contain Cards with the same name, but these are considered different Cards, and would have different IDs.)
 
+ - Associate Decks and Cards with a one-to-many association
+ - Add tests to check the association
+
 ### Card/Attack
 
 Each Card may have many Attacks. Each Attack may belong to many Cards.
 
 E.g. Lizard Wizard and Bulk Brogan might both have a `Charge` attack. Lizard Wizard might have a `Thunderbolt` and `Bulk Brogan` a `Piledriver`.
+
+ - Associate Cards and Attacks with a many-to-many association
+ - Add tests to check the association
