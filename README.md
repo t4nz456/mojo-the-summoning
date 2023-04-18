@@ -17,7 +17,7 @@ Once you have the project locally on your machine, you're ready to start work.
 
 ### Configure your connection
 
- - In `server/src/db/` create your `config.js` file and connect to your database using Sequelize.
+ - In `server/src/db/config.js` connect to your database using Sequelize.
 
 ## Define models
 
@@ -132,7 +132,7 @@ E.g. `The Fellowship` might contain Cards called `Lizard Wizard` and `Bulk Broga
 
 Each Card may have many Attacks. Each Attack may belong to many Cards.
 
-E.g. Lizard Wizard and Bulk Brogan might both have a `Charge` attack. Lizard Wizard might have a `Thunderbolt` and `Bulk Brogan` a `Piledriver`.
+E.g. `Lizard Wizard` and `Bulk Brogan` might both have a `Charge` attack. Lizard Wizard might have a `Thunderbolt` and `Bulk Brogan` a `Piledriver`.
 
  - Associate Cards and Attacks with a many-to-many association
  - Add tests to check the association
