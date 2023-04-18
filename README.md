@@ -76,7 +76,8 @@ classDiagram
 
  - One test file has been started for you in `models/User.test.js`.
  - Continue to write unit tests which check that each of your models functions correctly.
- - Run the tests with `npm run test`
+ - It is recommended to import into your test files from `models/index.js`. 
+ - Run the tests with `npm run test`.
 
 ## Define associations
 
