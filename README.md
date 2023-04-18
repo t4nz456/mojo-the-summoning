@@ -78,7 +78,7 @@ classDiagram
  - Continue to write unit tests which check that each of your models functions correctly.
  - Run the tests with `npm run test`
 
-## Define relationships
+## Define associations
 
 ```mermaid
 classDiagram
