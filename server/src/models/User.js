@@ -1,1 +1,1 @@
-// connect to your database here
+// create your User model here
