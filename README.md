@@ -113,7 +113,7 @@ You should set up the associations in `models/index.js`.
 
 ### User/Deck
 
-Each User may create and exactly one Deck.
+Each User may create exactly one Deck.
 
 E.g. A User `gandalf` might create a Deck called `The Fellowship`.
 
