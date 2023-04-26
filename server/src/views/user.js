@@ -1,16 +1,34 @@
 const express = require('express')
-const { User } = require('../models')
+const { User, Deck, Card } = require('../models')
 
 const router = express.Router()
 
 /**
- * Return a user by their id
+ * Get a user by their id
  */
 router.get('/:id', async (req, res) => {
   try {
     const user = await User.findByPk(req.params.id)
     if (!user) return res.sendStatus(404)
     res.send(user)
+  } catch (err) {
+    res.sendStatus(500)
+    console.error(err)
+  }
+})
+
+/**
+ * Get all users
+ */
+router.get('/', async (_req, res) => {
+  try {
+    const users = await User.findAll({
+      include: {
+        model: Deck,
+        include: Card
+      }
+    })
+    res.send(users)
   } catch (err) {
     res.sendStatus(500)
     console.error(err)
