@@ -11,7 +11,7 @@ Once you have the project locally on your machine, you're ready to start work.
 ### Install dependencies
 
  - `cd` into the `server` directory
- - Then, use `npm` to install the `sqlite3`, `sequlize` and `jest` packages.
+ - Then, use `npm` to install the `sqlite3`, `sequelize` and `jest` packages.
 
 :warning: **Warning:** Make sure you `cd` into `server` first! This project has multiple folders and you do not want to install dependencies into the wrong one.
 
