@@ -137,3 +137,26 @@ E.g. `Lizard Wizard` and `Bulk Brogan` might both have a `Charge` attack. Lizard
 
  - Associate Cards and Attacks with a many-to-many association
  - Add tests to check the association
+ 
+## Try out the app
+ 
+If you're models are successfully defined, you should be able to run the app and view the results in the browser.
+ 
+ 1. In a terminal, `cd` into `server` and run
+ ```bash
+ npm install
+ npm run seed
+ npm run dev
+ ```
+ This will start the development server (the back-end).
+ 
+ 1. In a separate terminal, `cd` into `client` and run
+ ```bash
+ npm install
+ npm run dev
+ ```
+ This will start the client (the front-end). You should see a url (usually localhost:5173). Visit this url in your browser to see the client displaying data requested from the database.
+
+Well done! You provided the database functionality for the app and it is now working :)
+
+**Tip**: to stop the servers running, click in the terminal and press `ctrl + c`
