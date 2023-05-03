@@ -4,7 +4,7 @@
 
 _Mojo: The Summoning_ is a card-collecting game where players battle 1 on 1 using their decks of Cards.
 
-**GOAL**: Construct the backed database for Mojo: The Summoning by configuring Sequelize, defining models (`User`, `Deck`, `Card`, and `Attack`), defining associations, and test the models and associations in corresponding test file.
+**GOAL**: Construct the backend database for Mojo: The Summoning by configuring Sequelize, defining models (`User`, `Deck`, `Card`, and `Attack`), defining associations, and test the models and associations in corresponding test file.
 
 ## Starting Point
 
