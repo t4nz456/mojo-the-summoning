@@ -36,12 +36,21 @@ Once you have the project locally on your machine, you're ready to start your wo
   - `Attack`
 2. When defining your models, make sure to do the following so that the front end will work:
   - The model name should be the same name as your model
-  - Use titlecase (i.e. uppercase) for the model name
+  - Use titlecase (i.e. uppercase) for the model name:
     ```javascript
     let Example = db.define("Example", {
-      // Other code here
+      // properties
     })
     ```
+    If using this style
+    ```js
+    class Example extends Model {}
+    
+    Example.init({
+      // properties
+    }, { sequelize: db })
+    ```
+    you don't need to do anything as the titlecase model name is provided for you by default.
 
 ### User
 
